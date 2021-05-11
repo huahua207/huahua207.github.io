@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Intro_of_Comp_HW3</title>
+    <link rel="icon" href="dog_icon.png" type="image/x-icon"/>
+</head>
+<body>
+
+<h1 style="background-color:red;">Self Introduction</h1>
+    
+<script language="JavaScript">
+    function ShowTime(){
+        var NowDate = new Date();
+        var y = NowDate.getFullYear();
+        var month = NowDate.getMonth()+1;
+        var d = NowDate.getDate();
+        var h = ('0'+NowDate.getHours()).slice(-2);
+        var min = ('0'+NowDate.getMinutes()).slice(-2);
+        var s = ('0'+NowDate.getSeconds()).slice(-2);
+        document.getElementById('showbox').innerHTML = month+'-'+d+'-'+y+' '+h+':'+min+':'+s;
+        setTimeout('ShowTime()',1000);
+    }
+    </script>
+    <body onload="ShowTime()">
+    <div id="showbox"></div>
+    </body>
+
+<audio controls autoplay loop>
+    <source src="I'm_here_convert.wav" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+<h2 style="color:rgb(241, 212, 224)">Wuli HanaHana</h2>
+<img src="hanahana.jpg" alt="Trulli" width="530" height="333">
+
+<p>Hello! My name is Angel.</p>
+<span>I graduated from Taipei First Girls high school. <a href="http://www.fg.tp.edu.tw/bin/home.php">Visit TFG</a></span>
+<p>Now, I am a NTU student, majoring in electrical engineering. <a href="https://web.ee.ntu.edu.tw/">Visit NTUEE</a></p>
+<p>I have some hobbies, such as listening to <a href='https://www.youtube.com/watch?v=MICksKeZoJU'>classical music</a>, <a href='https://en.wikipedia.org/wiki/The_Shawshank_Redemption'>watching movies</a>. My favorite singer is <a href='https://www.youtube.com/watch?v=K_E5pzBrAKQ'>Hua Chen Yu</a>.</p>
+
+</body>
+</html>
